@@ -1,4 +1,234 @@
 @import url("https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap");
+#videoCollection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; }
+
+iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 250px; }
+
+.titleText {
+  color: var(--main-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  margin-bottom: 10px; }
+
+.subtitleText {
+  font-size: 1.2rem;
+  color: var(--main-color);
+  letter-spacing: 1px;
+  margin-bottom: 20px; }
+
+.tableContainer {
+  display: flex;
+  justify-content: center; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 5px;
+  margin-bottom: 40px; }
+
+th {
+  text-transform: uppercase; }
+
+td,
+th {
+  text-align: left;
+  padding: 8px; }
+
+tr {
+  color: var(--main-color);
+  height: 40px;
+  padding: 0 30px; }
+
+tr:nth-child(even) {
+  background: var(--linear-gradient);
+  opacity: 0.8;
+  color: var(--background-color); }
+
+/* Tablet */
+@media (max-width: 768px) and (min-width: 376px) {
+  #videoCollection {
+    grid-template-columns: repeat(2, 1fr); }
+  iframe {
+    height: 200px; } }
+
+/* Mobile */
+@media (max-width: 375px) {
+  #videoCollection {
+    grid-template-columns: repeat(1, 1fr); }
+  .releaseText {
+    font-size: 1.2rem; }
+  .textTitle {
+    font-size: 1rem; }
+  iframe {
+    height: 200px;
+    width: 90%;
+    margin: 0 10px; }
+  table {
+    display: block;
+    overflow-x: auto; } }
+
+.contactSection {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem; }
+
+.imageContainer {
+  justify-self: flex-end; }
+
+.imageContact {
+  width: 500px;
+  justify-content: flex-end; }
+
+.contactForm {
+  padding-left: 30px;
+  display: grid;
+  grid-template-rows: auto;
+  color: var(--main-color); }
+
+.titleForm {
+  color: var(--main-color);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  letter-spacing: 2px; }
+
+.subtitleForm {
+  margin-bottom: 40px;
+  padding-left: 30px;
+  color: var(--main-color); }
+
+.labelText {
+  padding: 5px 0; }
+
+.radioContainer {
+  margin-bottom: 35px; }
+
+.labelRadio {
+  padding: 15px 0;
+  font-size: 1.2rem;
+  display: block; }
+
+input {
+  border-radius: 10px;
+  border: 1px solid var(--background-color);
+  margin: 10px 0px;
+  width: 200px;
+  height: 40px;
+  padding-left: 10px; }
+
+input[type='radio'],
+input[type='checkbox'] {
+  height: 10px;
+  width: 20px; }
+
+input[type='checkbox'] p {
+  color: red; }
+
+.selectContainer {
+  margin-bottom: 10px; }
+
+select {
+  border: 0px;
+  border-radius: 5px;
+  width: 100px;
+  height: 22px;
+  padding-left: 5px;
+  margin-left: 15px; }
+
+.messageContainer {
+  display: flex;
+  flex-direction: column; }
+
+#message {
+  margin: 20px 0;
+  width: 400px;
+  height: 150px;
+  border: 0px;
+  border-radius: 5px;
+  resize: none; }
+
+.send-Btn {
+  background: linear-gradient(to right, #38ef7d, #11998e);
+  color: var(--background-color);
+  cursor: pointer;
+  letter-spacing: 0.1rem; }
+
+.send-Btn:hover {
+  animation: AnimationName 3s ease infinite; }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+.delete-Btn {
+  border: 0.5px solid #919191;
+  color: #ef5350;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  transition: 0.5s all; }
+
+.delete-Btn:hover {
+  background-color: #ef5350;
+  border: 0px;
+  color: var(--background-color);
+  animation: ease-out 1s infinite; }
+
+.checkContainer {
+  font-size: 14px;
+  letter-spacing: 0.02rem; }
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 5px; }
+
+#itemContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px; }
+
+.itemIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--main-color);
+  border: 1px solid var(--grey-color);
+  padding: 30px;
+  border-radius: 10px; }
+
+.itemIcon i {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: var(--grey-color); }
+
+.textIcon {
+  color: var(--grey-color);
+  text-align: center; }
+
+/* Mobile */
+@media (max-width: 375px) {
+  #itemContainer {
+    display: flex;
+    flex-wrap: wrap; }
+  .itemIcon {
+    width: 90%; } }
+
+/* Tablet */
+@media (max-width: 768px) and (min-width: 376px) {
+  #productSection {
+    margin-top: 10px;
+    padding: 0 10px; } }
+
 * {
   box-sizing: border-box;
   margin: 0;
