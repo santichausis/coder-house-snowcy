@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="./assets/images/favicon.ico">
+    <title>Snowcy | Contacto</title>
+    <meta name="description" content="Un ecommerce para comprar las mejoras tablas de Snowboard del mercado">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/contacto.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerContainer" class="widthLimit">
+            <a href="./index.html">
+                <picture>
+                    <img class="logoMain" src="./assets/images/Snowcy-logo.png" alt="Logo Snowcy">
+                </picture>
+            </a>
+            <!-- Menu -->
+            <nav>
+                <ul class="menu">
+                    <li class="items"><a class="links" href="./tienda.html"><i class="fas fa-shopping-cart"></i>
+                            Tienda</a>
+                        <ul class="subItems">
+                            <li class="subLinks"><a class="links" href="./tienda.html">Hombre</a></li>
+                            <li class="subLinks"><a class="links" href="./tienda.html">Mujer</a></li>
+                            <li class="subLinks"><a class="links" href="./tienda.html">Niños</a></li>
+                        </ul>
+                    </li>
+                    <li class="items"><a class="links" href="./lanzamientos.html">Lanzamientos</a></li>
+                    <li class="items"><a class="links" href="./blog.html">Blog</a></li>
+                    <li class="items"><a class="links" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contactSection">
+        <div class="imageContainer">
+            <picture>
+                <img src="./assets/images/contact.jpg" alt="Imagen de contacto" class="imageContact border">
+            </picture>
+        </div>
+        <div>
+            <h2 class="titleForm">CONTACTO</h2>
+            <p class="subtitleForm">Te invitamos a que nos dejes un mensaje</p>
+            <form class="contactForm">
+                <label class="labelText" for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <label class="labelText" for="mail" id="mail">Mail</label>
+                <input type="email" name="mail" placeholder="ejemplo@mail.com" required>
+                <div class="radioContainer">
+                    <label class="labelRadio">Quiero recibir info de:</label>
+                    <input type="radio" name="info" id="1" value="Productos">
+                    <label for="productos">Productos</label>
+                    <input type="radio" name="info" id="2" value="Viajes">
+                    <label for="viajes">Viajes</label>
+                    <input type="radio" name="info" id="3" value="Trabajo">
+                    <label for="trabajo">Trabajo</label>
+                </div>
+                <div class="selectContainer">
+                    <label class="labelText" for="brands">Selecciona tu marca favorita:</label>
+                    <select name="brands" id="brands">
+                        <option value="dc">DC</option>
+                        <option value="burton">Burton</option>
+                        <option value="salomon">Salomon</option>
+                        <option value="arbor">Arbor</option>
+                        <option value="billabong">Bilabong</option>
+                        <option value="otra">Otra</option>
+                    </select>
+                </div>
+                <div class="messageContainer">
+                    <label for="message">Deja tu comentario:</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div>
+                    <input class="send-Btn" type="submit" value="⚡️ ENVIAR">
+                    <input class="delete-Btn" type="reset" value="🗑 BORRAR">
+                </div>
+                <div class="checkContainer">
+                    <input type="checkbox" required>Acepto términos y condiciones
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <section id="footerSection" class="widthLimit">
+            <div>
+                <h5 class="footerSocial">Acerca de</h5>
+                <p class="paragraphFooter">
+                    Snowcy es una tienda de tablas para practicar Snowboard.
+                    Vendemos más de 10 marcas y para todos los estilos.
+                    Se pueden usar para all mountain o freestyle.</p>
+            </div>
+            <div>
+                <h5 class="titleFooter">Secciones</h5>
+                <ul class="listFooter">
+                    <li class="listFooterItems"><a class="itemFooter" href="./tienda.html">Tienda</a></li>
+                    <li class="listFooterItems"><a class="itemFooter" href="./lanzamientos.html">Lanzamientos</a></li>
+                    <li class="listFooterItems"><a class="itemFooter" href="./blog.html">Blog</a></li>
+                    <li class="listFooterItems"><a class="itemFooter" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footerSocial">
+                <h5 class="titleFooter">Nuestras redes</h5>
+                <a href="#" class="socialLinks">
+                    <picture><i class="socialIcons fab fa-twitter"></i></picture>
+                </a>
+                <a href="#" class="socialLinks">
+                    <picture><i class="socialIcons fab fa-facebook-square"></i></picture>
+                </a>
+                <a href="#" class="socialLinks">
+                    <picture><i class="socialIcons fab fa-twitch"></i></picture>
+                </a>
+                <a href="#" class="socialLinks">
+                    <picture><i class="socialIcons fab fa-instagram"></i></picture>
+                </a>
+                <a href="#" class="socialLinks">
+                    <picture><i class="socialIcons fab fa-youtube"></i></picture>
+                </a>
+            </div>
+            <div class="footerMade">
+                <p>Hecho con 🧉 por Santi Chausis</p>
+            </div>
+        </section>
+    </footer>
+    </section>
+
+    <script src="https://kit.fontawesome.com/e86d460481.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
