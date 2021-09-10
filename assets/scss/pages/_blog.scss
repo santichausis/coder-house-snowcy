@@ -1,3 +1,5 @@
+@import '../themes/colors';
+
 #videoCollection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -9,7 +11,7 @@
     height: 250px;
   }
   .titleText {
-    color: var(--main-color);
+    color: $main-color;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 30px;
@@ -17,7 +19,7 @@
   }
   .subtitleText {
     font-size: 1.2rem;
-    color: var(--main-color);
+    color: $main-color;
     letter-spacing: 1px;
     margin-bottom: 20px;
   }
@@ -40,14 +42,14 @@
     padding: 8px;
   }
   tr {
-    color: var(--main-color);
+    color: $main-color;
     height: 40px;
     padding: 0 30px;
   }
   tr:nth-child(even) {
-    background: var(--linear-gradient);
+    background: $linear-gradient;
     opacity: 0.8;
-    color: var(--background-color);
+    color: $background-color;
   }
   /* Tablet */
   @media (max-width: 768px) and (min-width: 376px) {

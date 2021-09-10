@@ -1,3 +1,5 @@
+@import '../themes/colors';
+
 h2 {
     font-size: 2rem;
     letter-spacing: 5px;
@@ -11,18 +13,18 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--main-color);
-    border: 1px solid var(--grey-color);
+    color: $main-color;
+    border: 1px solid $grey-color;
     padding: 30px;
     border-radius: 10px;
   }
   .itemIcon i {
     margin-bottom: 20px;
     font-size: 2rem;
-    color: var(--grey-color);
+    color: $grey-color;
   }
   .textIcon {
-    color: var(--grey-color);
+    color: $grey-color;
     text-align: center;
   }
   /* Mobile */

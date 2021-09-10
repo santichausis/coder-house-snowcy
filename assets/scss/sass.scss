@@ -3,20 +3,13 @@
 @import 'pages/contacto';
 @import 'pages/lanzamientos';
 @import 'pages/tienda';
-
-$background-color: #f2f2f2;
-$main-color: #3a7bd5;
-$secondary-color: #d9185f;
-$dark-color: #00d2ff;
-$active-color: #f29f05;
-$linear-gradient: linear-gradient(to right, #3a7bd5, #00d2ff);
-$grey-color: #2e2e2e;
+@import 'themes/colors';
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  text-decoration: none !important;
   list-style: none;
 }
 body {
