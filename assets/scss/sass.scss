@@ -28,6 +28,9 @@ body {
   display: grid;
   grid-template-columns: 250px 1fr;
 }
+.lineHeader {
+  display: none;
+}
 .border {
   border-radius: 100px;
   border-top-left-radius: 30px;
@@ -397,8 +400,26 @@ footer {
 }
 /* Mobile */
 @media (max-width: 375px) {
-  nav {
-    display: none;
+  #headerContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 85px 60px;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .linkLogo {
+    margin: 0 auto;
+  }
+  .items {
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+  }
+  .lineHeader {
+    display: table;
+    border: 1px solid $secondary-color;
+    width: 85%;
+    margin: 0 auto;
   }
   #firstSection {
     grid-template-columns: 1fr;
@@ -428,7 +449,7 @@ footer {
   .mainBtn {
     margin-top: 15px;
     width: 190px;
-    height: 30px;
+    height: 40px;
     border: 0;
     border-radius: 30px;
     transition: 0.8s;
