@@ -72,6 +72,11 @@ li:hover {
   padding-bottom: 5px;
   transition: all 0.5s;
 }
+.links-active {
+  color: $secondary-color;
+  border-bottom: 1px solid $secondary-color;
+  font-weight: 500;
+}
 .links:hover {
   color: $secondary-color;
   border-bottom: 1px solid $secondary-color;
@@ -102,10 +107,10 @@ li:hover {
   font-size: 1.1rem;
   color: $grey-color;
 }
-button {
+.btn {
   cursor: pointer;
 }
-.mainButton {
+.mainBtn {
   margin-top: 30px;
   width: 120px;
   height: 50px;
@@ -116,7 +121,7 @@ button {
   background-color: $main-color;
   color: $background-color;
 }
-.mainButton:hover {
+.mainBtn:hover {
   background-color: $background-color;
   color: $secondary-color;
   border: 1px solid $secondary-color;
@@ -165,12 +170,7 @@ button {
   }
 }
 /* Second Section */
-#productSection {
-  display: grid;
-  grid-template-rows: 100px 1fr;
-  padding: 60px 0;
-}
-.readMoreButton {
+.readMoreBtn {
   margin: 0;
   align-self: center;
   justify-self: end;
@@ -231,7 +231,7 @@ button {
   border: 1px solid $secondary-color;
   color: $secondary-color;
 }
-.productName {
+.product {
   text-align: center;
   color: $grey-color;
   font-size: 1rem;
@@ -239,13 +239,18 @@ button {
   margin: 10px 0;
   padding: 0 1px;
 }
+.productName {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0 1px;
+}
+
 .productPrice {
   text-align: center;
   letter-spacing: 2px;
-  color: $grey-color;
   font-weight: 500;
   font-size: 1.2rem;
-  padding: 10px 0;
 }
 /* Third Section */
 #thirdSection {
@@ -420,7 +425,7 @@ footer {
     padding: 0 12px;
     font-weight: 300;
   }
-  .mainButton {
+  .mainBtn {
     margin-top: 15px;
     width: 190px;
     height: 30px;
@@ -445,7 +450,7 @@ footer {
     font-size: 1.4rem;
     text-align: center;
   }
-  .readMoreButton {
+  .readMoreBtn {
     margin: 15px auto;
   }
   .productCollection {

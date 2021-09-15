@@ -211,10 +211,20 @@ h2 {
   font-size: 2rem;
   letter-spacing: 5px; }
 
+.productSection {
+  display: grid;
+  grid-template-rows: 100px 1fr; }
+
 #itemContainer {
   display: flex;
   justify-content: center;
   gap: 30px; }
+
+.productName-shop {
+  margin-top: 15px; }
+
+.productPrice-shop {
+  margin: 15px 0; }
 
 .itemIcon {
   display: flex;
@@ -244,7 +254,7 @@ h2 {
 
 /* Tablet */
 @media (max-width: 768px) and (min-width: 376px) {
-  #productSection {
+  .productSection {
     margin-top: 10px;
     padding: 0 10px; } }
 
@@ -312,6 +322,11 @@ li:hover .subItems {
   padding-bottom: 5px;
   transition: all 0.5s; }
 
+.links-active {
+  color: #d9185f;
+  border-bottom: 1px solid #d9185f;
+  font-weight: 500; }
+
 .links:hover {
   color: #d9185f;
   border-bottom: 1px solid #d9185f;
@@ -342,10 +357,10 @@ li:hover .subItems {
   font-size: 1.1rem;
   color: #2e2e2e; }
 
-button {
+.btn {
   cursor: pointer; }
 
-.mainButton {
+.mainBtn {
   margin-top: 30px;
   width: 120px;
   height: 50px;
@@ -356,7 +371,7 @@ button {
   background-color: #3a7bd5;
   color: #f2f2f2; }
 
-.mainButton:hover {
+.mainBtn:hover {
   background-color: #f2f2f2;
   color: #d9185f;
   border: 1px solid #d9185f;
@@ -401,12 +416,7 @@ button {
     transform: rotate(1turn); } }
 
 /* Second Section */
-#productSection {
-  display: grid;
-  grid-template-rows: 100px 1fr;
-  padding: 60px 0; }
-
-.readMoreButton {
+.readMoreBtn {
   margin: 0;
   align-self: center;
   justify-self: end; }
@@ -467,7 +477,7 @@ button {
   border: 1px solid #d9185f;
   color: #d9185f; }
 
-.productName {
+.product {
   text-align: center;
   color: #2e2e2e;
   font-size: 1rem;
@@ -475,13 +485,17 @@ button {
   margin: 10px 0;
   padding: 0 1px; }
 
+.productName {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0 1px; }
+
 .productPrice {
   text-align: center;
   letter-spacing: 2px;
-  color: #2e2e2e;
   font-weight: 500;
-  font-size: 1.2rem;
-  padding: 10px 0; }
+  font-size: 1.2rem; }
 
 /* Third Section */
 #thirdSection {
@@ -633,7 +647,7 @@ footer {
     text-align: center;
     padding: 0 12px;
     font-weight: 300; }
-  .mainButton {
+  .mainBtn {
     margin-top: 15px;
     width: 190px;
     height: 30px;
@@ -653,7 +667,7 @@ footer {
   .releaseText {
     font-size: 1.4rem;
     text-align: center; }
-  .readMoreButton {
+  .readMoreBtn {
     margin: 15px auto; }
   .productCollection {
     margin: 0 10px; }
