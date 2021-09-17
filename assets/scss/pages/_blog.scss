@@ -1,5 +1,13 @@
 @import '../themes/colors';
 
+section {
+  h2.textTitle {
+    letter-spacing: 1px;
+  }
+  h4.textTitle {
+    letter-spacing: 1px;
+  }
+}
 #videoCollection {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
