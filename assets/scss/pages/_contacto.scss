@@ -126,6 +126,9 @@ select {
 }
 /* Mobile */
 @media (max-width: 375px) {
+  .imageContainer {
+    margin-top: 30px;
+  }
   .contactSection {
     grid-template-columns: 350px;
     grid-template-rows: 500px 1fr;
@@ -139,6 +142,13 @@ select {
   }
   .imageContact {
     width: 100%;
+  }
+  input {
+    margin: 10px auto;
+    width: 240px;
+  }
+  #brands {
+    margin: 20px;
   }
   #message {
     width: 300px;

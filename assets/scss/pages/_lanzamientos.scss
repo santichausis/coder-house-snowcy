@@ -6,7 +6,7 @@
 
 .carousel {
   position: relative;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
   margin-top: 26px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .carousel-control {
-  background: rgba(0, 0, 0, 0.28);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
   color: #fff;
   cursor: pointer;
@@ -52,6 +52,7 @@
   text-align: center;
   width: 40px;
   z-index: 10;
+  transition: all .5s;
 }
 
 .carousel-control.prev {
@@ -63,8 +64,9 @@
 }
 
 .carousel-control:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   color: #aaaaaa;
+
 }
 
 #carousel-1:checked ~ .control-1,
